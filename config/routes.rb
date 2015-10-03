@@ -1,5 +1,13 @@
 Rails.application.routes.draw do
+  post '/order', to: 'order#order'
+  get '/congratulations',  to: 'order#congratulations'
+  get '/order',  to: 'order#order'
+  get '/pricing', to: 'static_pages#pricing'
+  get '/about', to: 'static_pages#about'
+  get '/contact', to: 'static_pages#contact'
+
   root to: "home#index"
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

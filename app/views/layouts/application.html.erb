@@ -19,11 +19,11 @@
 				<div class="row">
 					<div class="col-sm-12">
 						<nav>
-							<a class="logo">Wunderbox</a>
+							<%= link_to "Wunderbox", root_path, class:"logo" %>
 							<div class="links">
-								<a href="">Pricing</a>
-								<a href="">About us</a>
-								<a href="">Contact</a>
+								<%= link_to "Pricing", pricing_path %>
+								<%= link_to "About us", about_path %>
+								<%= link_to "Contact", contact_path %>
 
 								<a href="" class="login">Log in</a>
 								<a href="">Sign up</a>
@@ -41,7 +41,7 @@
 				<div class="row">
 					<div class="col-sm-12">
 						<span class="note">
-							* Wunderbox is not related to Dropbox Inc. (it only uses it's API)
+							* Wunderbox is not related to Dropbox Inc. (it only uses its API)
 						</span>
 
 						<div class="copyright">

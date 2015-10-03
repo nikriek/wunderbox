@@ -69,7 +69,61 @@ header nav .logo {
 	text-transform:initial;
 	margin-top:-10px;
 	float:left;
+	text-decoration: none;
 }
+
+img.wunderbox {
+	display: block;
+	width:500px;
+	height:auto;
+	margin-top:-30px;
+	z-index:0;
+	position:relative;
+}
+
+
+.btn {
+	color:#fff;
+	padding:12px 20px;
+	text-decoration:none;
+}
+
+.btn.signupwithdropbox {
+	background:#007ee5;
+}
+
+.btn.buycoupon {
+	background:#aaa;
+	margin-left:20px;
+}
+
+
+.btn i.fa {
+	margin-right:5px;
+}
+
+.btn:hover {
+	opacity:0.9;
+}
+
+
+
+
+
+h1 {
+	color:#00ace8;
+	font-size:70px;
+	font-weight:600;
+	margin-bottom:30px;
+}
+
+h2 {
+	color:#777;
+	font-size:30px;
+	font-weight:500;
+	margin-bottom:50px;
+}
+
 
 
 
