@@ -7,7 +7,7 @@ class OrderController < ApplicationController
     @order = Order.new(order_params)
 
     if @order.save
-      redirect_to :congratulations_url
+      redirect_to action: "congratulations"
     else 
       render :new
     end  
