@@ -9,7 +9,7 @@ class OrderController < ApplicationController
     if @order.save
       redirect_to :congratulations_url
     else 
-      #@order.errors, status: :unprocessable_entity }
+      render :new
     end  
   end
 
