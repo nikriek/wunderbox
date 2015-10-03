@@ -1,4 +1,6 @@
 class OrderController < ApplicationController
+  before_action :check_user_status
+  
   def new
     @order = Order.new
   end
@@ -20,5 +22,11 @@ class OrderController < ApplicationController
 
     def order_params
       params.require(:order).permit(:category, :pricing)
+    end
+
+    def check_user_status
+        unless user_signed_in?
+        redirect_to root_path
+      end
     end
 end

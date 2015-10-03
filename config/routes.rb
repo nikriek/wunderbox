@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
+  devise_for :users, :skip => [:sessions, :registrations, :passwords], :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
 
   post '/order', to: 'order#create'
   get '/congratulations',  to: 'order#congratulations'
