@@ -10,7 +10,8 @@ Rails.application.routes.draw do
   get '/pricing', to: 'static_pages#pricing'
   get '/about', to: 'static_pages#about'
   get '/contact', to: 'static_pages#contact'
-
+  get '/login',  to: 'home#login'
+  
   root to: "home#index"
   
   # The priority is based upon order of creation: first created -> highest priority.
