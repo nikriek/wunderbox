@@ -16,23 +16,23 @@
 
 
  .top20 {
- 	margin-top:20px;
+ 	margin-top:20px !important;
  }
 
   .top50 {
- 	margin-top:50px;
+ 	margin-top:50px !important;
  }
 
    .bottom20 {
- 	margin-bottom:20px;
+ 	margin-bottom:20px !important;
  }
 
   .bottom30 {
- 	margin-bottom:30px;
+ 	margin-bottom:30px !important;
  }
 
   .bottom50 {
- 	margin-bottom:50px;
+ 	margin-bottom:50px !important;
  }
 
 
@@ -167,6 +167,22 @@ h2 {
 }
 
 
+p {
+	font-size:16px;
+	color:#555;
+	line-height: 24px;
+	display:block;
+	//clear:both;
+}
+
+p a {
+	color:#00ace8;
+	text-decoration: none;
+}
+
+p a:hover {
+	text-decoration: underline;
+}
 
 
 
