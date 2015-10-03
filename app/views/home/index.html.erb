@@ -8,9 +8,14 @@
 					<h2 class="bottom50">Get surprised or suprise your <br>friends with Wunderbox!</h2>
 				</hgroup>
 
+				
 				<div class="signup">
-						<%= link_to raw("<i class='fa fa-dropbox'></i> Sign in with Dropbox"), user_omniauth_authorize_path(:dropbox_oauth2), :class => 'btn signupwithdropbox' %>
+				<% if not user_signed_in? %>
+					<%= link_to raw("<i class='fa fa-dropbox'></i> Sign in with Dropbox"), user_omniauth_authorize_path(:dropbox_oauth2), :class => 'btn signupwithdropbox' %>
 
+				<% else %>
+					<%= link_to raw("<i class='fa fa-arrow-right'></i> Choose now"), order_path, :class => 'btn' %>
+				<% end %>
 					<a class="btn buycoupon" href="">
 						<i class="fa fa-gift"></i> Surprise a friend
 					</a>
