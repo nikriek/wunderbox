@@ -7,28 +7,81 @@
 	width:350px;
 }
 
-.tpl-new input.category {
+.tpl-new input.custom-radio {
 	float:left;
-	width:220px;
-	margin-right:30px;
+	width:200px;
+	margin-right:20px;
 	height:50px;
 	margin-bottom:20px;
 	cursor:pointer;
 }
 
-.tpl-new input.category:before {
+.tpl-new input.custom-radio.category:nth-child(6):before {
+	border-color:#b0f0a3;
+}
+
+.tpl-new input.custom-radio.category:nth-child(5):before {
+	border-color:#cef0a3;
+}
+
+.tpl-new input.custom-radio.category:nth-child(4):before {
+	border-color:#e8f0a3;
+}
+
+.tpl-new input.custom-radio.category:nth-child(3):before {
+	border-color:#f0c7a3;
+}
+
+.tpl-new input.custom-radio.category:nth-child(2):before {
+	border-color:#f0a3a3;
+}
+
+.tpl-new input.custom-radio.category:nth-child(1):before {
+	border-color:#f0a3d2;
+}
+
+
+
+
+.tpl-new input.custom-radio.price:nth-child(1):before {
+	border-color:#eee;
+}
+
+.tpl-new input.custom-radio.price:nth-child(2):before {
+	border-color:#ddd;
+}
+
+.tpl-new input.custom-radio.price:nth-child(3):before {
+	border-color:#ccc;
+}
+
+.tpl-new input.custom-radio.price:nth-child(4):before {
+	border-color:#bbb;
+}
+
+.tpl-new input.custom-radio.price:nth-child(5):before {
+	border-color:#aaa;
+}
+
+.tpl-new input.custom-radio:before {
 	content: attr(data-label);
 	float:left;
 	width:200px;
 	background:#fff;
 	padding:10px 15px;
-	border:3px solid #ccc;
+	border:3px solid #ddd;
 	color:#000;
 	border-radius:6px;
 	box-sizing:border-box;
 	height:50px;
+	line-height:24px;
+	 text-transform: capitalize;
+	 color:#555;
+	 font-weight:600;
 }
 
-.tpl-new input.category:checked:before {
-	border-color:#00ace8;
+.tpl-new input.custom-radio:checked:before {
+	border-color:#00ace8 !important;
+	background:#00ace8;
+	color:#fff;
 }

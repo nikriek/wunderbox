@@ -15,6 +15,27 @@
  */
 
 
+ .top20 {
+ 	margin-top:20px;
+ }
+
+  .top50 {
+ 	margin-top:50px;
+ }
+
+   .bottom20 {
+ 	margin-bottom:20px;
+ }
+
+  .bottom30 {
+ 	margin-bottom:30px;
+ }
+
+  .bottom50 {
+ 	margin-bottom:50px;
+ }
+
+
 * {
 	margin:0 auto;
 	font-family:'Open Sans', Arial, sans-serif;
@@ -97,6 +118,12 @@ img.wunderbox {
 	margin-left:20px;
 }
 
+input.btn {
+	border:0px;
+	-webkit-appereance: none;
+	background:#00ace8;
+}
+
 
 .btn i.fa {
 	margin-right:5px;
@@ -114,14 +141,12 @@ h1 {
 	color:#00ace8;
 	font-size:70px;
 	font-weight:600;
-	margin-bottom:30px;
 }
 
 h2 {
 	color:#777;
 	font-size:30px;
 	font-weight:500;
-	margin-bottom:50px;
 }
 
 
