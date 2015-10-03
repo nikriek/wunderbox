@@ -27,6 +27,7 @@ gem 'omniauth'
 gem 'omniauth-dropbox-oauth2'
 gem 'devise'
 gem 'responders', '~> 2.0'
+gem 'sidekiq'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

@@ -9,6 +9,7 @@ class OrderController < ApplicationController
     @order = Order.new(order_params)
     @order.user = current_user
     if @order.save
+      ProcessOrdersJob.perform_later(@order)
       redirect_to action: "congratulations"
     else 
       render :new
