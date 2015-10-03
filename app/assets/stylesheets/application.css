@@ -121,6 +121,7 @@ img.wunderbox {
 	padding:12px 20px;
 	text-decoration:none;
 	background:#00ace8;
+	display: inline-block;
 }
 
 .btn.signupwithdropbox {

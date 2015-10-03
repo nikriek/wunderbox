@@ -27,7 +27,7 @@
 
 								<% if user_signed_in? %>
 								  <span><%= current_user.name %></span>
-									<%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
+									<%= link_to "Sign out", users_logout_path, :method => :delete %>
 								<% else %>
 								  <a href="" class="login">Sign in</a>
 									<a href="">Sign up</a>
