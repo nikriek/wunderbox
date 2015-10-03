@@ -4,4 +4,8 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   respond_to :html
+
+  def after_sign_in_path_for(resource_or_scope)
+    "/order"
+  end
 end
