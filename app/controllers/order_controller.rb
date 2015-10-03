@@ -1,13 +1,13 @@
 class OrderController < ApplicationController
   before_action :check_user_status
-  
+
   def new
     @order = Order.new
   end
 
   def create
     @order = Order.new(order_params)
-
+    @order.user = current_user
     if @order.save
       redirect_to action: "congratulations"
     else 
