@@ -3,6 +3,8 @@ class Users::OmniauthCallbacksController < ApplicationController
     # You need to implement the method below in your model (e.g. app/models/user.rb)
     @user = User.from_omniauth(request.env["omniauth.auth"])
 
+    puts request.env["omniauth.auth"]
+    
     if @user.persisted?
       sign_in_and_redirect @user, :action => :"authentication" #this will throw if @user is not activated
     else
