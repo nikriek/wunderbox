@@ -1,6 +1,6 @@
 class Order < ActiveRecord::Base
   enum category: [:pictures, :literature, :music, :games, :gifs, :stuff]
-  enum pricing: [:0, :1, :2, :5, :10]
+  enum pricing: [:zero, :one, :two, :five, :ten]
 
   belongs_to :user
 

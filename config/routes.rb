@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  post '/order', to: 'order#order'
+  post '/order', to: 'order#create'
   get '/congratulations',  to: 'order#congratulations'
-  get '/order',  to: 'order#order'
+  get '/order',  to: 'order#new'
   get '/pricing', to: 'static_pages#pricing'
   get '/about', to: 'static_pages#about'
   get '/contact', to: 'static_pages#contact'
