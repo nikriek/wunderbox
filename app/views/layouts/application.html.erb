@@ -1,14 +1,56 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Wunderbox</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+	<title>Wunderbox</title>
+
+	<meta charset="utf-8">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	<%= csrf_meta_tags %>
+
 </head>
 <body>
+	<div id="wrapper">
+		<header>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<nav>
+							<a class="logo">Wunderbox</a>
+							<div class="links">
+								<a href="">Pricing</a>
+								<a href="">About us</a>
+								<a href="">Contact</a>
 
-<%= yield %>
+								<a href="" class="login">Log in</a>
+								<a href="">Sign up</a>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
 
+		<%= yield %>
+
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<span class="note">
+							* Wunderbox is not related to Dropbox Inc. (it only uses it's API)
+						</span>
+
+						<div class="copyright">
+							Created at HackZürich '15 - Copyright 2015 - <a href="">Terms of use</a> - <a href="">Contact</a> - <a href="">Imprint</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
 </body>
 </html>
