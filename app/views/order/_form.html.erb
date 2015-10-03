@@ -1,40 +1,39 @@
-<div class="row">
 <%= form_for @order, url: order_path do |f| %>
-  <div class="col-sm-12">
-    
-      <% if @order.errors.any? %>
-      <div id="error_explanation">
-        <h2><%= pluralize(@order.errors.count, "error") %> prohibited this order from being saved:</h2>
-
-        <ul>
-        <% @order.errors.full_messages.each do |message| %>
-          <li><%= message %></li>
-        <% end %>
-        </ul>
-      </div>
-    <% end %>
-  </div>
-</div>
-<div class="row">
-  <div class="col-sm-12">
-    <h2 class="top50 bottom30">Choose your interest</h2>
-    </div>
+  <div class="row">
     <div class="col-sm-12">
-      <% Order::categories.each do |key, category| %>
-        <%= f.radio_button :category, key, :class => 'custom-radio category', :data => {:label => key} %>
+        <% if @order.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@order.errors.count, "error") %> prohibited this order from being saved:</h2>
+
+          <ul>
+          <% @order.errors.full_messages.each do |message| %>
+            <li><%= message %></li>
+          <% end %>
+          </ul>
+        </div>
       <% end %>
     </div>
-    <div class="col-sm-12">
-    <h2 class="top50 bottom30">Choose your experience</h2>
-    </div>
-    <div class="col-sm-12">
-      <% Order::pricings.each do |key, pricing| %>
-          <%= f.radio_button :pricing, key, :class => 'custom-radio price', :data => {:label => 'EUR ' + key} %>
-        <% end %>
-
-
-      <%= f.submit 'Order', :class => 'btn top50 bottom50' %>
-   
   </div>
-   <% end %>
-</div>
+  <div class="row">
+    <div class="col-sm-12">
+      <h2 class="top50 bottom30">Choose your interest</h2>
+      </div>
+      <div class="col-sm-12">
+        <% Order::categories.each do |key, category| %>
+          <%= f.radio_button :category, key, :class => 'custom-radio category', :data => {:label => key} %>
+        <% end %>
+      </div>
+      <div class="col-sm-12">
+      <h2 class="top50 bottom30">Choose your experience</h2>
+      </div>
+      <div class="col-sm-12">
+        <% Order::pricings.each do |key, pricing| %>
+            <%= f.radio_button :pricing, key, :class => 'custom-radio price', :data => {:label => 'EUR ' + key} %>
+          <% end %>
+
+
+        <%= f.submit 'Order', :class => 'btn top50 bottom50' %>
+     
+    </div>
+  </div>
+<% end %>
