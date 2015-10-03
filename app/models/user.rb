@@ -12,4 +12,6 @@ class User < ActiveRecord::Base
       user.access_token = auth.credentials.token
     end
   end
+
+  has_many :orders
 end
