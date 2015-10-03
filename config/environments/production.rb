@@ -77,6 +77,5 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 
-  config.secret_key = ENV['DEVISE_SECRET_KEY'] if Rails.env.production?
 
 end
