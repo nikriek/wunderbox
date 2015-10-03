@@ -1,15 +1,5 @@
 <section class="tpl-new">
-	<div class="container">
-		<%= form_for @order, url: order_path do |f| %>
-        <% Order::categories.each do |key, category| %>
-          <%= f.radio_button :category, category, :class => 'category', :data => {:label => key} %>
-        <% end %>
-
-        <% Order::pricings.each do |key, pricing| %>
-          <%= f.label :key, key %>
-          <%= f.radio_button :pricing, pricing %>
-        <% end %>
-        <%= f.submit %>
-    <% end %>
-	</div>
+  <div class="container">
+    <%= render 'form' %>
+  </div>
 </section>
