@@ -1,9 +1,8 @@
-<section class="tpl-order">
+<section class="tpl-new">
 	<div class="container">
 		<%= form_for @order, url: order_path do |f| %>
         <% Order::categories.each do |key, category| %>
-          <%= f.label :key, key %>
-          <%= f.radio_button :category, category %>
+          <%= f.radio_button :category, category, :class => 'category', :data => {:label => key} %>
         <% end %>
 
         <% Order::pricings.each do |key, pricing| %>
