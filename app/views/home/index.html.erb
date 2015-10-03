@@ -9,10 +9,7 @@
 				</hgroup>
 
 				<div class="signup">
-					<a class="btn signupwithdropbox" href="">
-						<i class="fa fa-dropbox"></i> Sign in with Dropbox
-						<%= link_to "Sign in with Dropbox", user_omniauth_authorize_path(:dropbox_oauth2) %>
-					</a>
+						<%= link_to raw("<i class='fa fa-dropbox'></i> Sign in with Dropbox"), user_omniauth_authorize_path(:dropbox_oauth2), :class => 'btn signupwithdropbox' %>
 
 					<a class="btn buycoupon" href="">
 						<i class="fa fa-gift"></i> Surprise a friend
