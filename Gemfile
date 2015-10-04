@@ -28,6 +28,7 @@ gem 'omniauth-dropbox-oauth2'
 gem 'devise'
 gem 'responders', '~> 2.0'
 gem 'delayed_job'
+gem 'delayed_job_active_record'
 gem 'dropbox-sdk'
 
 # Use ActiveModel has_secure_password
