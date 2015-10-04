@@ -1,0 +1,30 @@
+<section class="tpl-about">
+	<div class="container">
+		<div class="row ">
+			<div class="col-sm-6 border-right top50">
+
+				<h2 class="bottom30">Sign in</h2>
+
+				<p class="bottom30">To sign up now for a new account or sign in if you already<br>signed up just click the button below.</p>
+
+				<% if not user_signed_in? %>
+					<%= link_to raw("<i class='fa fa-dropbox'></i> Sign in with Dropbox"), user_omniauth_authorize_path(:dropbox_oauth2), :class => 'btn signupwithdropbox bottom50' %>
+				<% else %>
+					<%= link_to raw("<i class='fa fa-arrow-right'></i> Choose now"), order_path, :class => 'btn bottom150 ' %>
+				<% end %>
+
+			</div>
+			<div class="col-sm-6 top50">
+				<h2 class="bottom30">Suprise a friend</h2>
+
+				<p class="bottom30">You're looking for the perfect gift you can give to a friend? Then you came to the right place as we know what makes your friends happy: A coupon for Wunderbox, a box full of wunderbare files.</p>
+
+				<p class="bottom30">It's only <b><s>EUR 10</s> EUR 5</b> for a limited amount of time. <br>Order now with PayPal and we'll send you the code via Email.</p>
+
+				<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=D35LH29TDY22L" target="_blank" class="paypal bottom50">
+				<%= image_tag("paypal.png") %></a>
+
+			</div>
+		</div>
+	</div>
+</section>
