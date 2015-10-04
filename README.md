@@ -5,7 +5,7 @@ Transform your Dropbox into a goodie bag.
 
 We offer a service where you can sign up with your Dropbox account to receive awesome goodies out of our Dropbox into a special goodies folder in your Dropbox.
 
-**This project has been created for HackZurich 2015.**
+*This project has been created for HackZurich 2015.*
 
 ---
 
