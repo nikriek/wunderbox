@@ -15,7 +15,9 @@
 //= require turbolinks
 //= require_tree .
 
-$(document).ready(function(){
+
+
+ready = function() {
 	$('.custom-radio.price').on('change', function(){
 		if($(this).val() == 'zero') {
 			$('#order-free').show();
@@ -26,5 +28,10 @@ $(document).ready(function(){
 		}
 	});
 
+	console.log($('.custom-radio.price').first());
+
 	$('.custom-radio.price').first().prop('checked', true).trigger('change');
-});
+};
+
+$(document).ready(ready);
+$(document).on('page:load', ready);
