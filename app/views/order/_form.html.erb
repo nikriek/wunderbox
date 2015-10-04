@@ -30,10 +30,21 @@
         <% Order::pricings.each do |key, pricing| %>
             <%= f.radio_button :pricing, key, :class => 'custom-radio price', :data => {:label => 'EUR ' + key} %>
           <% end %>
-
-
-        <%= f.submit 'Order', :class => 'btn top50 bottom50' %>
-     
     </div>
+
+    <div class="col-sm-12">
+      <h2 class="top50 bottom30">Checkout</h2>
+      </div>
+      <div class="col-sm-12">
+          <div id="order-free">
+            <%= f.submit 'Order for free', :class => 'btn bottom50', :style => 'margin-top:0px;' %>
+          </div>
+          <div id="order-payed">
+            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=D35LH29TDY22L" target="_blank" class="paypal bottom50">
+        <%= image_tag("paypal.png") %></a>
+          </div>
+
+    </div>
+
   </div>
 <% end %>

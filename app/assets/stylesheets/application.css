@@ -35,6 +35,15 @@
  	margin-bottom:50px !important;
  }
 
+ .bottom100 {
+ 	margin-bottom:100px !important;
+ }
+
+  .bottom150 {
+ 	margin-bottom:150px !important;
+ }
+
+
 
 * {
 	margin:0 auto;
@@ -152,6 +161,27 @@ input.btn {
 }
 
 
+input[type="text"],
+input[type="email"],
+textarea {
+	background:#eee;
+	border:none;
+	padding:10px 15px;
+	box-sizing: border-box;
+	font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 5px;
+    color: #666;
+    font-weight:500;
+}
+
+.input-label {
+	font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight:600;
+}
 
 
 h1 {

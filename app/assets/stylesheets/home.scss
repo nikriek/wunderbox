@@ -6,6 +6,17 @@
 	margin-top:150px;
 }
 
+.border-right {
+	border-right:1px solid #ddd;
+}
 
 
 
+.border-right + div {
+	padding-left:50px;
+}
+
+.paypal {
+	width:auto;
+	display:inline-block;
+}

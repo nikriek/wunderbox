@@ -14,3 +14,17 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+$(document).ready(function(){
+	$('.custom-radio.price').change(function(){
+		if($(this).val() == 'zero') {
+			$('#order-free').show();
+			$('#order-payed').hide();
+		} else {
+			$('#order-payed').show();
+			$('#order-free').hide();
+		}
+	});
+
+	$('.custom-radio.price').first().prop('checked', true).trigger('change');
+});

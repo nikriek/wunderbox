@@ -29,8 +29,8 @@
 								  <span><%= current_user.name %></span>
 									<%= link_to "Sign out", users_logout_path, :method => :delete %>
 								<% else %>
-								  <a href="" class="login">Sign in</a>
-									<a href="">Sign up</a>
+									<%= link_to "Sign in", login_path, :class => 'login' %>
+									<%= link_to "Sign up", login_path %>
 								<% end %>
 							</div>
 						</nav>
