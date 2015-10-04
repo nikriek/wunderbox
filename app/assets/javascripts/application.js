@@ -16,7 +16,7 @@
 //= require_tree .
 
 $(document).ready(function(){
-	$('.custom-radio.price').change(function(){
+	$('.custom-radio.price').on('change', function(){
 		if($(this).val() == 'zero') {
 			$('#order-free').show();
 			$('#order-payed').hide();
